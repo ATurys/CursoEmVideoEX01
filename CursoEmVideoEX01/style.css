@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    /*font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;*/
+
+@font-face {
+    font-family: "Android";
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor01: #84E1AD;
+    --cor02: #65BF98;
+    --cor03: #2C7851;
+    --cor03transp: #65BF9893;
+    --cor04: #379464;
+    --cor05: #C5EBD6;
+
+    --corLinkHover: #6D8577;
+
+    --boxShadow: 0px 0px 10px black;
+}  
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--cor01);
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.795), var(--cor02), var(--cor02));
+    padding-bottom: 1px;
+    padding-top: 30px;
+    min-width: 320px;
+    min-height: 150px;
+    box-shadow: 0px 5px 10px black;
+}
+
+header > h1 {
+    padding-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0%;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.493);
+}
+
+header > h2 {
+    margin:10px auto;
+    max-width: 500px;
+    min-width: 320px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.493);
+}
+
+nav#menu {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+nav#menu > a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    padding: 6px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+a {
+    color: var(--cor03);
+    text-decoration: none;
+    background-color: var(--cor01);
+    padding: 2px;
+    border-radius: 3px;
+}
+
+a:hover{
+    color: var(--cor02);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+nav#menu > a:hover{
+    background-color: var(--corLinkHover) ;
+    border-radius: 5px;   
+    color: var(--cor02);
+}
+
+main {
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin:auto;
+    box-shadow: var(--boxShadow);
+    margin-bottom: 20px;
+}
+
+p > a.externo::after {
+    content: ' 🔗';
+}
+
+img {
+    width: 100%;
+}
+
+strong {
+    color: var(--cor04);
+    font-weight: bold;
+}
+
+article > .titulo{
+    margin: 0px;
+    padding: 5px 10px;
+    color: var(--cor03);
+    font-family: "Android";
+    font-weight: normal;
+}
+.texto {
+    margin: 5px 10px;
+    text-indent: 2em;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+.div-subtitulo {
+    padding: 5px 10px;
+}
+
+.subtitulo{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.795), var(--cor03transp));
+    text-indent: 8px;
+    margin: 0px;
+    color: var(--cor03);
+    font-family: "Android";
+    font-weight: normal;
+}
+
+div.video {
+    background-color: var(--cor03);
+    margin: 0px -10px;
+    padding: 20px;
+    padding-bottom: 55.28%;
+    position: relative;
+}
+
+div.video > iframe {
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#infoTituloAside {
+    background-color: var(--cor04);
+    color: white;
+    padding: 5px;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#infoTextoAside {
+    background-color: var(--cor05);
+    color: black;
+    margin-top: 0px;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 10px;
+}
+
+#aside {
+    margin: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.336);
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.textoaside {
+    margin-top: 0px;
+    text-indent: 2em;
+}
+
+aside > div > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    margin: 10px 50px;
+}
+
+aside > div > ul > li {
+    
+}
+
+footer {
+    background-color: black;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+footer > p > a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
